@@ -1,0 +1,212 @@
+/*fUENTES*/
+
+@font-face {
+    font-family: "TrebuchetMS";
+    src: url(../fonts/TrebucheMS.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BebasNeue";
+    src: url(../fonts/BebasNeue.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url(../fonts/websymbols-regular-webfont.eot);
+    src: url(../fonts/websymbols-regular-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/websymbols-regular-webfont.woff) format('woff'), url(../fonts/websymbols-regular-webfont.ttf) format('truetype'), url(../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*Estilos Generales*/
+
+:root {
+    --aqua-blue: #37bcf9;
+    --strong-blue: #00538c;
+    --medium-blue: #0370b9;
+    --blacky: #393d3f;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url(../img/pattern.png);
+}
+
+.wrap {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+
+/*CABECERA*/
+
+#header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    font-family: "BebasNeue";
+    color: white;
+}
+
+#logo {
+    float: left;
+    width: 200px;
+    background-color: var(--aqua-blue);
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+#logo h3 {
+    display: block;
+    font-size: 40px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 65px;
+    transition: all 300ms;
+}
+
+#logo .gear {
+    display: block;
+    float: left;
+    font-size: 30px;
+    margin-top: 8px;
+    margin-left: 26px
+}
+
+.gear,
+.icon,
+.twitter,
+.facebook,
+.youtube {
+    font-family: "WebSymbolsRegular";
+}
+
+#menu {
+    float: right;
+    height: 70px;
+    background: transparent;
+}
+
+#menu ul li {
+    font-size: 20px;
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+
+#menu ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+#menu ul li a:hover {
+    color: var(--aqua-blue);
+    transform: scale(1.2, 1.2);
+}
+
+
+/*BANNER*/
+
+#banner {
+    width: 95.5%;
+    height: 100px;
+    border: 10px solid white;
+    box-shadow: 0px 0px 2px gray;
+    background: url("../img/bakbaner.png");
+    background-position: -200px -200px;
+    margin: 20px auto;
+}
+
+#banner h1 {
+    color: white;
+    display: block;
+    width: 850px;
+    font-family: "BebasNeue";
+    font-size: 45px;
+    font-weight: normal;
+    text-shadow: 2px 2px 1px black;
+    letter-spacing: 2px;
+    margin: 27px auto;
+    text-align: center;
+}
+
+
+/*CARDS*/
+
+.card {
+    overflow: hidden;
+    margin: 22px;
+    margin-top: 40px;
+    width: 205px;
+    height: 305px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ddd;
+    float: left;
+    cursor: pointer;
+}
+
+.card:last-child {
+    margin-right: 0px;
+}
+
+.card .icon {
+    display: block;
+    width: shadow: 100%;
+    height: 130px;
+    font-size: 50px;
+    line-height: 110px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.card .category {
+    width: 100%;
+    height: 50px;
+    font-family: "TrebuchetMS";
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--strong-blue);
+}
+
+.card .description {
+    font-family: "TrebuchetMS";
+    text-align: center;
+    color: var(--medium-blue);
+}
+
+
+/*Lateral*/
+
+#lateral {
+    width: 300px;
+    min-height: 1200px;
+    font-family: "TrebuchetMS";
+    float: right;
+}
+
+aside h3 {
+    display: block;
+    width: auto;
+    height: 45px;
+    line-height: 15px;
+    background: url('../img/pxgray.png');
+    box-shadow: 0px 1px 0px var(--blacky);
+}
