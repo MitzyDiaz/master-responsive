@@ -1,38 +1,260 @@
-@media(max-width:1250px) {
-    .wrap {
-        width: 90%;
-        margin: 0px auto;
-    }
-    #banner h1 {
-        font-size: 35px;
-        margin: 33px auto;
-    }
-    .card p {
-        display: block;
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .card {
-        width: 17%;
-        margin: 1.45%;
-    }
-    #articles {
-        width: 65%;
-    }
-    #articles h2 {
-        margin-top: 0px;
-    }
-    #articles article {
-        width: 97%;
-    }
-    #footer .wrap>div {
-        width: 25%;
-    }
-    #footer #browsers img {
-        width: 15%;
-    }
-    #footer h5 {
-        font-size: 20px;
-    }
-}
+        @media(max-width:1250px) {
+            .wrap {
+                width: 90%;
+                margin: 0px auto;
+            }
+            #banner h1 {
+                width: 100%;
+                font-size: 35px;
+                text-align: center;
+                margin: 33px auto;
+            }
+            .card p {
+                display: block;
+                width: 90%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .card {
+                width: 17%;
+                margin: 1.45%;
+            }
+            #articles {
+                width: 65%;
+            }
+            #articles h2 {
+                margin-top: 0px;
+            }
+            #articles article {
+                width: 97%;
+            }
+            #footer .wrap>div {
+                width: 25%;
+            }
+            #footer #browsers img {
+                width: 15%;
+            }
+            #footer h5 {
+                font-size: 30px;
+            }
+        }
+        
+        @media (max-width: 1080px) {
+            .card .category {
+                font-size: 17px;
+            }
+            .card .description {
+                font-size: 14px;
+            }
+            #articles {
+                width: 61%;
+            }
+            #footer .wrap>div {
+                margin: 30px;
+            }
+        }
+        
+        @media (max-width: 970px) {
+            #articles {
+                width: 59%;
+            }
+            #footer h5 {
+                font-size: 22px;
+            }
+            #footer .wrap>div {
+                width: 26%;
+                margin: 30px;
+            }
+        }
+        
+        @media (max-width: 925px) {
+            #articles {
+                width: 65%;
+            }
+            #lateral {
+                width: 25%;
+            }
+            #lateral input[type="text"] {
+                width: 78%;
+            }
+            .aside-box {
+                width: 95%;
+                min-height: 140px;
+                height: auto;
+            }
+            #login input[type="email"],
+            #login input[type="password"] {
+                width: 75%;
+            }
+            #login input[type="submit"],
+            #login input[type="button"],
+            #login input[type="reset"],
+            #login button {
+                margin-bottom: 0px;
+            }
+        }
+        
+        @media (max-width: 909px) {
+            #footer .wrap>div {
+                width: 25%;
+                margin: 25px;
+            }
+            #footer img {
+                margin-bottom: 15px;
+                max-width: 100%;
+            }
+        }
+        
+        @media(max-width: 899px) {
+            #lateral h3 {
+                font-size: 20px;
+            }
+        }
+        
+        @media(max-width: 799px) {
+            #lateral h1 {
+                font-size: 29px;
+            }
+            .card {
+                height: auto;
+            }
+            .card .category {
+                font-size: 15px;
+                margin-top: -20px;
+            }
+            .card .description {
+                display: none;
+            }
+            #footer img {
+                margin-bottom: 15px;
+                max-width: 100%;
+            }
+            #footer .wrap>div {
+                width: 25%;
+                margin: 25px;
+            }
+            #footer #browsers img {
+                width: 14%;
+            }
+        }
+        
+        @media (max-width: 724px) {
+            #header {
+                width: 100%;
+                height: 125px;
+                padding-top: 10px;
+            }
+            #menu {
+                clear: both;
+                float: none;
+                width: 400px;
+                margin: 0 auto;
+            }
+            #logo {
+                float: none;
+                width: 200px;
+                margin: 0px auto;
+            }
+            #lateral input[type="text"] {
+                width: 73%;
+            }
+        }
+        
+        @media (max-width: 660px) {
+            #banner h1 {
+                font-size: 25px;
+            }
+            #lateral {
+                float: none;
+                width: 100%;
+                margin: 0px auto;
+                min-height: auto;
+            }
+            #articles {
+                clear: both;
+                float: none;
+                width: 100%;
+                margin: 0px auto;
+                min-height: auto;
+            }
+            #lateral input[type="text"] {
+                width: 93%;
+            }
+            #login input[type="email"],
+            #login input[type="password"] {
+                width: 92%;
+            }
+            #footer {
+                height: auto;
+                padding-bottom: 40px;
+            }
+            #footer h5 {
+                font-size: 25px;
+            }
+            #footer .wrap>div {
+                width: 100%;
+                margin: 0px auto;
+                margin-top: 20px;
+            }
+        }
+        
+        @media (max-width: 660px) {
+            .card {
+                width: 16%;
+            }
+        }
+        
+        @media (max-width: 475px) {
+            #banner h1 {
+                font-size: 18px;
+            }
+            #lateral input[type="text"] {
+                width: 85%;
+            }
+            #logo {
+                float: left;
+            }
+            .card {
+                width: 16%;
+            }
+            .card .icon {
+                font-size: 35px;
+            }
+            .card:hover .icon {
+                font-size: 35px;
+            }
+            .card .category {
+                font-size: 13px;
+            }
+            #menu {
+                clear: both;
+                float: none;
+                width: 100%;
+                margin: 0 auto;
+            }
+            #menu ul li {
+                width: 100%;
+                line-height: 52px;
+            }
+            #menu ul li a {
+                width: 100%;
+                line-height: 52px;
+            }
+            #menu ul li a:hover {
+                color: #37bcf9;
+                transform: scale(1, 1);
+            }
+            #header {
+                width: 100%;
+                height: 300px;
+                padding-top: 10px;
+            }
+            #articles .data {
+                float: none;
+                margin: -10px;
+                border-radius: 0px;
+            }
+            #articles article h4 {
+                margin-top: 20px;
+            }
+        }
