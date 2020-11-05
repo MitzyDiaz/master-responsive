@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "TrebuchetMS";
-    src: url(../fonts/TrebucheMS.ttf);
+    src: url(../fonts/TrebuchetMS.ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -251,6 +251,11 @@ body {
     box-shadow: 1px 1px 2px #ddd;
     float: left;
     cursor: pointer;
+    transition: all 300ms;
+}
+
+.card:hover {
+    background: black;
 }
 
 .card:last-child {
@@ -267,6 +272,21 @@ body {
     margin: 0px auto;
 }
 
+.card:hover .icon {
+    font-size: 70px;
+    color: var(--button-blue);
+    animation: showIcon 300ms linear;
+}
+
+@keyframes showIcon {
+    from {
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
 .card .category {
     width: 100%;
     height: 50px;
@@ -277,10 +297,43 @@ body {
     color: var(--strong-blue);
 }
 
+.card:hover .category {
+    color: white;
+    animation: showCategory 400ms;
+}
+
+@keyframes showCategory {
+    from {
+        transform: translateY(-300%);
+        color: black;
+    }
+    to {
+        transform: translateY(0%);
+        color: white;
+    }
+}
+
 .card .description {
     font-family: "TrebuchetMS";
     text-align: center;
     color: var(--medium-blue);
+    transition: all 300ms;
+}
+
+.card:hover .description {
+    color: white;
+    animation: showDescription 400ms;
+}
+
+@keyframes showDescription {
+    from {
+        transform: translateX(-300%);
+        color: black;
+    }
+    to {
+        transform: translateX(0%);
+        color: white;
+    }
 }
 
 
@@ -450,6 +503,31 @@ aside h3:first-child {
     margin-bottom: 20px;
 }
 
+#social .overlay {
+    display: block;
+    height: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0px0px 1px #ccc;
+    border: 3px solid white;
+    box-shadow: 0px 0px 4px #ccc;
+    background: #f4f7fe;
+    position: absolute;
+    padding: 5px;
+    margin-left: 70px;
+    margin-top: -52px;
+    cursor: pointer;
+    transform: translateX(-80%);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+#social div:hover .overlay {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
 
 /*Articulos*/
 
@@ -460,7 +538,7 @@ aside h3:first-child {
 
 #articles h2 {
     display: block;
-    width: 100%;
+    width: 97%;
     height: 75px;
     line-height: 75px;
     text-align: center;
@@ -529,6 +607,7 @@ aside h3:first-child {
     margin-top: 60px;
     line-height: 100px;
     text-align: center;
+    transition: all 1s;
 }
 
 #blog a {
@@ -537,6 +616,38 @@ aside h3:first-child {
     font-size: 40px;
     letter-spacing: 3px;
     text-decoration: none;
+    transition: all 1s;
+}
+
+#blog:hover {
+    background: #333;
+    border: 10px solid var(--aqua-blue);
+    border-radius: 240px;
+    box-shadow: 0px 0px 10px gray;
+    animation: blink 10s infinite linear;
+}
+
+#blog:hover a {
+    text-shadow: 1px 1px 1px black, 1px 2px 1px black, 1px 3px 1px black, 1px 4px 1px black, 1px 5px 1px black, 1px 6px 1px black;
+    color: white;
+}
+
+@keyframes blink {
+    0% {
+        border: 10px solid var(--aqua-blue);
+    }
+    25% {
+        border: 10px solid green;
+    }
+    50% {
+        border: 10px solid yellow;
+    }
+    75% {
+        border: 10px solid white;
+    }
+    100% {
+        border: 10px solid var(--aqua-blue);
+    }
 }
 
 #footer {
@@ -578,7 +689,7 @@ aside h3:first-child {
 #footer ul {
     text-align: left;
     margin: 20px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #footer ul li {
@@ -590,6 +701,13 @@ aside h3:first-child {
 #footer ul li a {
     display: block;
     height: 40px;
+    transition: 400ms;
+}
+
+#footer ul li:hover a {
+    padding-left: 40px;
+    color: white;
+    width: 100%;
 }
 
 #footer iframe {
@@ -605,6 +723,6 @@ aside h3:first-child {
     margin-bottom: 15px;
 }
 
-#footer #browsers img {
+footer #browsers img {
     width: 45px;
 }
